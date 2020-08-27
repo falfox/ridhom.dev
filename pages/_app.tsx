@@ -10,6 +10,12 @@ class MyApp extends App {
       <>
         <Head>
           <title>Ridho Maulana Akbar</title>
+          <link
+            rel="shortcut icon"
+            href="/static/favicon.ico"
+            type="image/x-icon"
+          />
+          <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         </Head>
         <Component {...pageProps} />
