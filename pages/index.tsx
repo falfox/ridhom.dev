@@ -14,7 +14,7 @@ export default function Index() {
       <main className="px-6 py-8">
         <div className="max-w-4xl py-32 mx-auto md:flex md:space-x-6">
           <div className="space-y-4 md:w-1/2">
-            <h3 className="text-5xl font-extrabold tracking-tight">
+            <h3 className="text-5xl font-extrabold tracking-tight md:text-6xl">
               <span className="block leading-none text-white">Full Stack</span>
               <span className="block leading-none text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-pink-600">
                 Developer
