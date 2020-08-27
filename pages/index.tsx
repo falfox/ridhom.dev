@@ -11,8 +11,8 @@ export default function Index() {
           </Link>
         </div>
       </header>
-      <main className="px-6 py-8">
-        <div className="max-w-4xl py-32 mx-auto md:flex md:space-x-6">
+      <main className="px-6 py-32 md:flex md:flex-col md:justify-center md:min-h-screen">
+        <div className="max-w-4xl mx-auto md:flex md:space-x-6">
           <div className="space-y-4 md:w-1/2">
             <h3 className="text-5xl font-extrabold tracking-tight md:text-6xl">
               <span className="block leading-none text-white">Full Stack</span>
