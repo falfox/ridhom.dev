@@ -51,7 +51,7 @@ export default function Index() {
                   </svg>
                 </div>
                 <p className="text-xs font-light">
-                  Indonesian fundraising platform by Cinta Quran Foundation
+                  Indonesia fundraising platform by Cinta Quran Foundation
                 </p>
               </a>
               <a
