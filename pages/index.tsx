@@ -121,21 +121,6 @@ export default function Index() {
             <span className="font-medium">falfox</span>
           </a>
           <a
-            href="https://twitter.com/falfoxdev"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="flex items-center space-x-2 hover:text-gray-500"
-          >
-            <svg
-              viewBox="0 0 18 18"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 fill-current"
-            >
-              <path d="M17.965 3.427a7.5 7.5 0 01-2.118.581 3.719 3.719 0 001.622-2.042 7.622 7.622 0 01-2.345.888 3.69 3.69 0 00-6.288 3.361A10.451 10.451 0 011.23 2.371c-.32.541-.5 1.17-.5 1.856a3.69 3.69 0 001.642 3.072A3.678 3.678 0 01.7 6.837v.046c0 1.789 1.27 3.28 2.959 3.62a3.745 3.745 0 01-1.659.064 3.702 3.702 0 003.453 2.563 7.4 7.4 0 01-4.576 1.578c-.293 0-.585-.017-.878-.05a10.497 10.497 0 005.668 1.657c6.79 0 10.499-5.622 10.499-10.49 0-.156 0-.315-.011-.472A7.452 7.452 0 0018 3.442l-.036-.015z" />
-            </svg>
-            <span className="font-medium">@falfoxdev</span>
-          </a>
-          <a
             href="https://www.instagram.com/ridhoomm/"
             target="_blank"
             rel="noreferrer noopener"
