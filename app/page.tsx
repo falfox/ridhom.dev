@@ -328,7 +328,7 @@ export default function Page() {
                   />
                 </svg>
                 <div className="font-semibold -translate-y-4">
-                  SO MUCH NONSENSE 🫣
+                  SO MUCH NONSENSE <span className="text-2xl">🫣</span>
                 </div>
               </div>
             </a>
