@@ -17,27 +17,6 @@ export default function Page() {
           <Ripple circleContainerWidth={circleContainerWidth} index={1} />
         </div>
 
-        <div className="absolute left-0 top-[25%]">
-          <motion.svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 384 384"
-            initial={{
-              x: 0,
-            }}
-            animate={{
-              x: circleContainerWidth ?? 3840,
-            }}
-            transition={{
-              ease: 'easeIn',
-              duration: 7,
-              repeat: Infinity,
-            }}
-          >
-            <rect x="0" y="0" width="384" height="384" fill="#2589D8" />
-          </motion.svg>
-        </div>
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
