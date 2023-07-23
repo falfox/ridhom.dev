@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 import 'tailwindcss/tailwind.css'
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
         <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
       </Head>
+      <Analytics />
       <body>{children}</body>
     </html>
   )
