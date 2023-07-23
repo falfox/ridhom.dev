@@ -89,7 +89,7 @@ export default function Page() {
       <div className="border-b border-white/10" />
 
       <section className="relative top-0 w-full max-w-4xl pt-64 pb-8 mx-auto">
-        <h2 className="pb-8 text-2xl font-semibold">Projects</h2>
+        <h2 className="pb-16 text-2xl font-semibold">Projects</h2>
 
         <article className="min-h-screen pb-4 bg-[#0E0F11] group">
           <a href="https://mazender.id" target="_blank">
