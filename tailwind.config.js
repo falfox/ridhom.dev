@@ -1,11 +1,13 @@
 module.exports = {
-  purge: {
-    content: ['./pages/**/*.tsx'],
-  },
+  content: [
+    './pages/**/*.tsx',
+    './app/**/*.tsx',
+    './components/**/*.tsx'
+  ],
   theme: {
     fontFamily: {
       sans: [
-        'Inter',
+        'Satoshi',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
