@@ -1,16 +1,11 @@
 'use client'
 import { cubicBezier, motion } from 'framer-motion'
 import { useRef } from 'react'
-import Marquee from 'react-fast-marquee'
 
 export default function Page() {
   const circleContainerRef = useRef<HTMLDivElement>(null)
 
   const circleContainerWidth = circleContainerRef.current?.clientWidth ?? 3840
-
-  console.log({
-    circleContainerWidth,
-  })
 
   return (
     <div className="antialiased text-white bg-[#0E0F11]">
@@ -20,8 +15,6 @@ export default function Page() {
           ref={circleContainerRef}
         >
           <Ripple circleContainerWidth={circleContainerWidth} index={1} />
-          {/* <Ripple circleContainerWidth={circleContainerWidth} index={2} />
-          <Ripple circleContainerWidth={circleContainerWidth} index={3} /> */}
         </div>
 
         <div className="absolute left-0 top-[25%]">
