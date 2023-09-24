@@ -47,9 +47,7 @@ export async function GET(): Promise<NextResponse> {
     'https://api.spotify.com/v1/me/player/currently-playing',
     {
       headers: { Authorization: `Bearer ${token}` },
-      next: {
-        revalidate: 0,
-      },
+      cache: 'no-cache',
     }
   )
 
@@ -59,8 +57,6 @@ export async function GET(): Promise<NextResponse> {
   }
 
   if (response.status == 204) {
-    console.log({})
-
     const data = ((await kv.hgetall('spotify:now-playing')) ??
       {}) as SpotifyResponse
 
@@ -108,9 +104,7 @@ const refreshToken = async () => {
           `${process.env.SPOTIFY_ID}:${process.env.SPOTIFY_SECRET}`
         )}`,
       },
-      next: {
-        revalidate: 0,
-      }
+      cache: 'no-cache',
     }
   ).then((res) => res.json())
 
