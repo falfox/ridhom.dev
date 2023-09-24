@@ -1,9 +1,7 @@
-import clsx from 'clsx'
-import { HeroSection } from './hero-section'
-import NowPlayingIcon from '@/components/now-playing-icon'
-import { Icons } from '@/components/icons'
 import { NowPlayingCard } from '@/components/now-playing'
 import Slider from '@/components/slider'
+import clsx from 'clsx'
+import { HeroSection } from './hero-section'
 
 export default function Page() {
   return (

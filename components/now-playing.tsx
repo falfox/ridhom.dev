@@ -7,7 +7,9 @@ export async function NowPlayingCard() {
   const response = await fetch(
     process.env.NEXT_PUBLIC_APP_URL + '/api/now-playing',
     {
-      cache: 'no-cache',
+      next: {
+        revalidate: 30,
+      },
     }
   )
 
