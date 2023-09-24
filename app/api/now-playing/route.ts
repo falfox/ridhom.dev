@@ -47,7 +47,9 @@ export async function GET(): Promise<NextResponse> {
     'https://api.spotify.com/v1/me/player/currently-playing',
     {
       headers: { Authorization: `Bearer ${token}` },
-      cache: 'no-cache',
+      next: {
+        revalidate: 30,
+      },
     }
   )
 
