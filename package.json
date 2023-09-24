@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
+    "@vercel/kv": "^0.2.3",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
     "framer-motion": "^10.13.0",
     "next": "^13.4.12",
     "react": "^18.2.0",
