@@ -57,6 +57,13 @@ export async function NowPlayingCard() {
                 addSuffix: true,
               })}
             </span>
+             <a
+              href="https://open.spotify.com/user/edoin21?si=a044ac47d3e44c15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icons.follow className="w-5 h-5 p-px text-white shrink-0" />
+            </a>
             <Icons.spotify className="w-5 h-5 shrink-0 text-[#1DB954]" />
           </>
         )}
