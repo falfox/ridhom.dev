@@ -1,17 +1,10 @@
-import { NowPlaying } from '@/app/api/now-playing/route'
+import { GET, NowPlaying } from '@/app/api/now-playing/route'
 import { formatDistanceToNowStrict } from 'date-fns'
 import { Icons } from './icons'
 import NowPlayingIcon from './now-playing-icon'
 
 export async function NowPlayingCard() {
-  const response = await fetch(
-    process.env.NEXT_PUBLIC_APP_URL + '/api/now-playing',
-    {
-      next: {
-        revalidate: 30,
-      },
-    }
-  )
+  const response = await GET()
 
   if (!response.ok) {
     return (
