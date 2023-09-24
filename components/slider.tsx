@@ -65,12 +65,17 @@ const Slider = () => {
           }
         }}
       >
-        <img className="object-cover w-full h-full aspect-square" src={images[page]} alt="" />
+        <img
+          className="object-cover w-full h-full aspect-square"
+          src={images[page]}
+          alt=""
+        />
       </motion.div>
       <div className="absolute left-0 right-0 flex items-center justify-center bottom-3">
         <div className="flex p-2 mx-auto space-x-2 bg-gray-900 border rounded-full bottom-2 border-white/10">
           {images.map((_, index) => (
             <div
+              key={index}
               className={`cursor-pointer w-2 h-2 rounded-full ${
                 page === index ? 'bg-white' : 'bg-gray-400'
               }`}
