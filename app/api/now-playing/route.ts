@@ -48,7 +48,7 @@ export async function GET(): Promise<NextResponse> {
     {
       headers: { Authorization: `Bearer ${token}` },
       next: {
-        revalidate: 30,
+        revalidate: 5,
       },
     }
   )
