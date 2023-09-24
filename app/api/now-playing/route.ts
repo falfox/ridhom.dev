@@ -108,6 +108,9 @@ const refreshToken = async () => {
           `${process.env.SPOTIFY_ID}:${process.env.SPOTIFY_SECRET}`
         )}`,
       },
+      next: {
+        revalidate: 0,
+      }
     }
   ).then((res) => res.json())
 

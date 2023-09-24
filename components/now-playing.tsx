@@ -1,7 +1,7 @@
 import { NowPlaying } from '@/app/api/now-playing/route'
+import { formatDistanceToNowStrict } from 'date-fns'
 import { Icons } from './icons'
 import NowPlayingIcon from './now-playing-icon'
-import { formatDistance, formatDistanceToNowStrict } from 'date-fns'
 
 export async function NowPlayingCard() {
   const response = await fetch(

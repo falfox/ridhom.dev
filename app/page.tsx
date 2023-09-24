@@ -3,6 +3,8 @@ import Slider from '@/components/slider'
 import clsx from 'clsx'
 import { HeroSection } from './hero-section'
 
+export const revalidate = 60
+
 export default function Page() {
   return (
     <div className="antialiased text-white bg-[#0E0F11]">
