@@ -1,8 +1,12 @@
-import { NowPlayingCard } from '@/components/now-playing'
+import { Icons } from '@/components/icons'
+import {
+  NowPlayingCard,
+  NowPlayingCardPlaceholder,
+} from '@/components/now-playing'
 import Slider from '@/components/slider'
 import clsx from 'clsx'
+import { Suspense } from 'react'
 import { HeroSection } from './hero-section'
-import { Icons } from '@/components/icons'
 
 export const revalidate = 30
 
@@ -296,15 +300,17 @@ export default function Page() {
               />
 
               <div className="absolute inset-x-0 bottom-0 w-full h-24 bg-gradient-to-t from-black to-transparent" />
-              <div className="absolute bottom-4 left-4 flex items-center">
-                <Icons.bungie className="w-12 h-12 text-white mr-2" />
+              <div className="absolute flex items-center bottom-4 left-4">
+                <Icons.bungie className="w-12 h-12 mr-2 text-white" />
                 <div className="text-4xl font-bold text-white drop-shadow-md">
                   FalFox#2847
                 </div>
               </div>
             </a>
-            <div className="flex flex-col flex-1 col-span-6 row-span-1 space-y-4 overflow-hidden sm:col-span-2">
-              <NowPlayingCard />
+            <div className="flex flex-col flex-1 col-span-6 row-span-1 overflow-hidden sm:col-span-2">
+              <Suspense fallback={<NowPlayingCardPlaceholder />}>
+                <NowPlayingCard />
+              </Suspense>
 
               <Slider />
             </div>

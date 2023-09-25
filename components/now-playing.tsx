@@ -9,7 +9,7 @@ export async function NowPlayingCard() {
   if (!response.ok) {
     return (
       <div className="border rounded-lg border-white/10 bg-[#1A1A1A]/20 hover:bg-[#1A1A1A]/60 divide-y divide-white/10">
-        <div className="flex items-center px-4 py-2 space-x-2 text-sm">
+        <div className="flex items-center px-4 py-2 space-x-2 text-sm h-9">
           <span className="w-full truncate">Error</span>
           <a
             href="https://open.spotify.com/user/edoin21?si=a044ac47d3e44c15"
@@ -20,7 +20,7 @@ export async function NowPlayingCard() {
           </a>
           <Icons.spotify className="w-5 h-5 shrink-0 text-[#1DB954]" />
         </div>
-        <div className="flex items-center justify-center px-4 py-2 space-x-2">
+        <div className="flex items-center justify-center h-16 px-4 py-2 space-x-2">
           <div className="w-10 h-10 bg-gray-700 rounded-md shrink-0" />
           <div className="relative w-full">
             <div className="text-white truncate">Failed to Fetch</div>
@@ -35,7 +35,7 @@ export async function NowPlayingCard() {
 
   return (
     <div className="border rounded-lg border-white/10 bg-[#1A1A1A]/20 hover:bg-[#1A1A1A]/60 divide-y divide-white/10">
-      <div className="flex items-center px-4 py-2 space-x-2 text-sm">
+      <div className="flex items-center px-4 py-2 space-x-2 text-sm h-9">
         {data.live ? (
           <>
             <NowPlayingIcon />
@@ -57,7 +57,7 @@ export async function NowPlayingCard() {
                 addSuffix: true,
               })}
             </span>
-             <a
+            <a
               href="https://open.spotify.com/user/edoin21?si=a044ac47d3e44c15"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export async function NowPlayingCard() {
       <a
         href={data.url}
         target="_blank"
-        className="flex items-center px-4 py-2 space-x-2 group"
+        className="flex items-center h-16 px-4 py-2 space-x-2 group"
       >
         <img
           src={data.cover_img}
@@ -100,6 +100,24 @@ export async function NowPlayingCard() {
           </div>
         </div>
       </a>
+    </div>
+  )
+}
+
+export function NowPlayingCardPlaceholder() {
+  return (
+    <div className="border rounded-lg border-white/10 bg-[#1A1A1A]/20 hover:bg-[#1A1A1A]/60 divide-y divide-white/10">
+      <div className="flex items-center px-4 py-2 space-x-2 text-sm h-9">
+        <div className="w-1/2 h-4 bg-gray-600 rounded-md animate-pulse"></div>
+        <div className="w-1/2 h-4 bg-gray-600 rounded-md animate-pulse"></div>
+      </div>
+      <div className="flex items-center justify-center h-16 px-4 py-2 space-x-2">
+        <div className="w-10 h-10 bg-gray-600 rounded-md shrink-0 animate-pulse"></div>
+        <div className="relative w-full">
+          <div className="w-1/2 h-4 bg-gray-600 rounded-md animate-pulse"></div>
+          <div className="w-1/3 h-4 mt-2 bg-gray-600 rounded-md animate-pulse"></div>
+        </div>
+      </div>
     </div>
   )
 }

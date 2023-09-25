@@ -39,7 +39,7 @@ const Slider = () => {
   }
 
   return (
-    <div className="relative object-cover w-full h-full overflow-hidden border rounded-lg border-white/10">
+    <div className="relative object-cover w-full h-full mt-4 overflow-hidden border rounded-lg border-white/10">
       <motion.div
         className="flex items-center justify-center w-full h-full"
         key={page}
