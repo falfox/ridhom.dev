@@ -3,8 +3,6 @@ import { formatDistanceToNowStrict } from 'date-fns'
 import { Icons } from './icons'
 import NowPlayingIcon from './now-playing-icon'
 
-export const revalidate = 30
-
 export async function NowPlayingCard() {
   const response = await GET()
 
