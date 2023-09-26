@@ -20,7 +20,7 @@ export default function Page() {
         <h2 className="pb-16 text-2xl font-semibold">Projects</h2>
 
         <article className="min-h-screen pb-4 bg-[#0E0F11] group">
-          <a href="https://mazender.id" target="_blank">
+          <a href="https://mazender.id" target="_blank" rel="noopener noreferrer">
             <img
               src="/mazender.png"
               alt="Mazender Project Preview"
