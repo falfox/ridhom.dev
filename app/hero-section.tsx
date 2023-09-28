@@ -50,7 +50,7 @@ export function HeroSection() {
           <h1 className="text-6xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-white/60 to-white drop-shadow-md">
             RidhoM
           </h1>
-          <h2 className="text-xl text-gray-300 [text-wrap:balance]">
+          <h2 className="text-xl text-gray-300 [text-wrap:balance] max-w-xl	mx-auto">
             Software Developer based in Indonesia. Passionate in building
             software with delightful user experience
           </h2>
