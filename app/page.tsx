@@ -33,7 +33,7 @@ export default function Page() {
                 <LinkExternalIcon />
               </div>
               <div className="text-lg text-gray-300">
-                Chrome Extension that helps you send messages quickly and easily
+                Chrome Extension for WhatsApp for Web that helps you send messages quickly and easily
               </div>
               <div className="absolute right-0 flex space-x-3 top-4">
                 <Badge>UI DESIGN</Badge>
