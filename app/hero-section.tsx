@@ -51,7 +51,7 @@ export function HeroSection() {
             RidhoM
           </h1>
           <h2 className="text-xl text-gray-300 [text-wrap:balance]">
-            Full Stack developer based in Indonesia. Passionate in building
+            Software Developer based in Indonesia. Passionate in building
             software with delightful user experience
           </h2>
         </div>
