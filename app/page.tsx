@@ -20,7 +20,7 @@ export default function Page() {
         <h2 className="pb-16 text-2xl font-semibold">Projects</h2>
 
         <article className="min-h-screen pb-4 bg-[#0E0F11] group">
-          <a href="https:/hgsearch.ridhom.dev" target="_blank" rel="noopener">
+          <a href="https://hgsearch.ridhom.dev" target="_blank" rel="noopener">
             <img
               src="/hgsearch.webp"
               alt="HGSearch Project Preview"
@@ -69,7 +69,7 @@ export default function Page() {
 
         <article className="pb-4 bg-[#0E0F11] group">
           <a
-            href="http://untukumat.com"
+            href="https://untukumat.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -99,7 +99,7 @@ export default function Page() {
         </article>
         <article className="pb-4 bg-[#0E0F11] group hidden">
           <a
-            href="http://d2-leveling.vercel.app"
+            href="https://d2-leveling.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
           >
