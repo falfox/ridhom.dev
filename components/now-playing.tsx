@@ -89,7 +89,7 @@ export async function NowPlayingCard() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="inline-block p-1.5 mr-px transition-all duration-200 origin-bottom-left scale-95 bg-white/10 border rounded-full shadow-xl opacity-0 border-white/40 w-7 h-7 group-hover:opacity-100 group-hover:scale-105"
+              className="inline-block p-1.5 mr-px transition-all duration-200 scale-95 bg-white/10 border rounded-full shadow-xl opacity-0 border-white/40 w-7 h-7 group-hover:opacity-100 group-hover:scale-105"
             >
               <path
                 strokeLinecap="round"
