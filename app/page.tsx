@@ -20,6 +20,30 @@ export default function Page() {
         <h2 className="pb-16 text-2xl font-semibold">Projects</h2>
 
         <article className="min-h-screen pb-4 bg-[#0E0F11] group">
+          <a href="https:/hgsearch.ridhom.dev" target="_blank" rel="noopener">
+            <img
+              src="/hgsearch.webp"
+              alt="HGSearch Project Preview"
+              className="object-cover w-full duration-150 border border-gray-800 lg:scale-105 rounded-xl group-hover:scale-100"
+            />
+
+            <div className="relative py-8 space-y-3 ">
+              <div className="pt-12 text-4xl font-bold">
+                HG Video Search
+                <LinkExternalIcon />
+              </div>
+              <div className="text-lg text-gray-300">
+                Search through all transcripts from HealthyGamerGG YouTube channel down to the second
+              </div>
+              <div className="absolute right-0 flex space-x-3 top-4">
+                <Badge>UI DESIGN</Badge>
+                <Badge>FRONTEND</Badge>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article className="min-h-screen pb-4 bg-[#0E0F11] group">
           <a href="https://mazender.id" target="_blank">
             <img
               src="/mazender.png"
@@ -43,7 +67,7 @@ export default function Page() {
           </a>
         </article>
 
-        <article className="min-h-screen pb-4 bg-[#0E0F11] group">
+        <article className="pb-4 bg-[#0E0F11] group">
           <a
             href="http://untukumat.com"
             target="_blank"
@@ -73,7 +97,7 @@ export default function Page() {
             </div>
           </a>
         </article>
-        <article className="pb-4 bg-[#0E0F11] group">
+        <article className="pb-4 bg-[#0E0F11] group hidden">
           <a
             href="http://d2-leveling.vercel.app"
             target="_blank"
