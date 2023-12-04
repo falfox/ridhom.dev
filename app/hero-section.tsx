@@ -1,4 +1,5 @@
 'use client'
+import { AnnounceLink } from '@/components/announce-button'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 
@@ -27,7 +28,10 @@ export function HeroSection() {
         className="absolute inset-0 flex items-center justify-center w-screen h-screen overflow-hidden pointer-events-none"
         ref={circleContainerRef}
       >
-        <Ripple circleContainerWidth={circleContainerWidth} key={circleContainerWidth} />
+        <Ripple
+          circleContainerWidth={circleContainerWidth}
+          key={circleContainerWidth}
+        />
       </div>
 
       <svg
@@ -47,6 +51,21 @@ export function HeroSection() {
 
       <div className="absolute inset-0 flex flex-col justify-center w-full h-screen overflow-hidden text-white">
         <div className="w-full max-w-4xl mx-auto space-y-6 text-center">
+          <AnnounceLink href="https://www.linkedin.com/in/ridhoomm/">
+            Open to work
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-4 h-4 ml-2 text-current"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </AnnounceLink>
           <h1 className="text-6xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-white/60 to-white drop-shadow-md">
             RidhoM
           </h1>
@@ -94,14 +113,13 @@ function Ripple({ circleContainerWidth }: { circleContainerWidth: number }) {
       <motion.circle
         cx="673.5"
         cy="673.5"
+        strokeOpacity={0.12}
         initial={{
-          strokeOpacity: 0.12,
           stroke: '#fff',
         }}
         animate={{
           strokeWidth: [64, 256, width * 2, 0],
           r: [0, width, width, 0],
-          strokeOpacity: 0.31,
           // stroke: '#0BADEB',
         }}
         transition={{
