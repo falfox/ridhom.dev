@@ -55,7 +55,7 @@ export function HeroSection() {
             Open to work
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
+              viewBox="0 0 24 24"
               fill="currentColor"
               className="w-4 h-4 ml-2 text-current"
             >
