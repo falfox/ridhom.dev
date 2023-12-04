@@ -9,7 +9,7 @@ export function AnnounceLink({
 }) {
   return (
     <a
-      className="relative inline-block border rounded-full bg-black/60 border-white/10 group"
+      className="relative inline-block border border-black rounded-full bg-black/60 border-white/10 group"
       href={href}
       target="_blank"
     >
